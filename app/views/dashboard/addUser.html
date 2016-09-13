@@ -1,0 +1,39 @@
+<div>
+	<h2>Add User</h2>
+	<span class="glyphicon glyphicon-dashboard bg-fade"></span>
+	<div class="jumbotron">
+	   <div class="container">
+         <center>
+           <table class="table table-bordered">
+             <tbody>
+               <tr>
+				             <td><label>Name : </label></td>
+                     <td><input type="text" name="name" ng-model="object.fullname"></td>
+              </tr>
+              <tr>
+				            <td><label>Email : </label></td>
+                    <td><input type="email" name="email" ng-model="object.email"></td>
+              </tr>
+              <tr>
+				            <td><label>Password : </label></td>
+                    <td><input type="password" name="passsword" ng-model="object.password"></td>
+              </tr>
+              <tr>
+				            <td><label>PhoneNo : </label></td>
+                    <td><input type="number" name="phoneno" ng-model="object.phoneno"></td>
+              </tr>
+              <tr>
+				            <td><label>Landline : </label></td>
+                    <td><input type="number" name="landline" ng-model="object.landline"></td>
+              </tr>
+              <tr>
+				            <td><label>Address : </label></td>
+                    <td><input type="text" name="address" ng-model="object.address"></td>
+              </tr>
+            </tbody>
+          </table>
+          <button type="button" name="Submit" ng-click="addUser()">Submit</button>
+        </center>
+    </div>
+	</div>
+</div>

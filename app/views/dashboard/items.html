@@ -1,0 +1,38 @@
+<div>
+	<h2>Dishes <small>which make us small and happy...!</small></h2>
+	<span class="glyphicon glyphicon-dashboard bg-fade"></span>
+	<div class="jumbotron">
+		<div class="container">
+			<a class="pull-right btn btn-primary btn-outline btn-rounded" ng-click="add_Item()">Add Item</a><br><br>
+			<button class="pull right" confirmed-click="showdeletedItems()"
+				 ng-confirm-click="Would you like to delete?">Delete</button>
+			<button ng-click="editItem()">Edit</button>
+      <table class="table table bordered">
+    <thead>
+      <tr>
+				<th>select</th>
+        <th>Item Id</th>
+        <th>Name</th>
+        <th>Category Id</th>
+        <th>Cost</th>
+        <th>Rating</th>
+				<th>Image Id</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="item in items" ng-if="item.item_name&&item.deleted_at==NULL">
+				<td>
+					<input type="checkbox" ng-model="strin" ng-click="selected_item(item.id);selected_item_edit(item.id)">
+				</td>
+        <td>{{item.item_id}}</td>
+        <td>{{item.item_name}}</td>
+        <td>{{item.cat_id}}</td>
+        <td>{{item.cost}}</td>
+        <td>{{item.rating}}</td>
+				<td>{{item.img_id}}</td>
+      </tr>
+    </tbody>
+  </table>
+		</div>
+	</div>
+</div>

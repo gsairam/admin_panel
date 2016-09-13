@@ -1,0 +1,26 @@
+<div class="dashboard-page">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-2 sidebar">
+
+       <div class="text-center">
+        <h2 class="brand">F & V <small>order now..!</small></h2>
+        <img src="images/flat-avatar.png" class="user-avatar" /><br />
+        <a ui-sref="login" class="btn btn-white btn-outline btn-rounded btn-sm">Logout</a>
+      </div>
+
+      <ul class="nav nav-sidebar">
+        <li ng-class="{active: $state.includes('overview')}"><a ui-sref="overview">Overview <span class="sr-only">(current)</span></a></li>
+        <li ng-class="{active: $state.includes('users')}"><a ui-sref="users">Users</a></li>
+        <li ng-class="{active: $state.includes('categories')}"><a ui-sref="categories">Categories</a></li>
+        <li ng-class="{active: $state.includes('items')}"><a ui-sref="items">Items</a></li>
+        <li ng-class="{active: $state.includes('offers')}"><a ui-sref="offers">Offers</a></li>
+        <li ng-class="{active: $state.includes('orders')}"><a ui-sref="orders">Orders</a></li>
+      </ul>
+
+    </div>
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" ui-view>
+    </div>
+  </div>
+</div>
+</div>

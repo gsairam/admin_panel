@@ -1,0 +1,43 @@
+<div>
+	<h2>Add Store</h2>
+	<span class="glyphicon glyphicon-dashboard bg-fade"></span>
+	<div class="jumbotron">
+	   <div class="container">
+         <center>
+           <table class="table table-bordered">
+             <tbody>
+               <tr>
+				             <td><label>Store Id : </label></td>
+                     <td><input type="text" name="id" ng-model="store.store_id"></td>
+              </tr>
+               <tr>
+				             <td><label>Store Name : </label></td>
+                     <td><input type="text" name="name" ng-model="store.store_name"></td>
+              </tr>
+              <tr>
+				            <td><label>Email : </label></td>
+                    <td><input type="email" name="email" ng-model="store.email"></td>
+              </tr>
+              <tr>
+				            <td><label>Password : </label></td>
+                    <td><input type="password" name="passsword" ng-model="store.password"></td>
+              </tr>
+              <tr>
+				            <td><label>PhoneNo : </label></td>
+                    <td><input type="number" name="phoneno" ng-model="store.phoneno"></td>
+              </tr>
+              <tr>
+				            <td><label>Landline : </label></td>
+                    <td><input type="number" name="landline" ng-model="store.landline"></td>
+              </tr>
+              <tr>
+				            <td><label>Address : </label></td>
+                    <td><input type="text" name="address" ng-model="store.address"></td>
+              </tr>
+            </tbody>
+          </table>
+          <button type="button" name="Submit" ng-click="addStore()">Submit</button>
+        </center>
+    </div>
+	</div>
+</div>

@@ -1,0 +1,24 @@
+<div>
+	<h2>Categories <small>which rule the day...!</small></h2>
+	<span class="glyphicon glyphicon-dashboard bg-fade"></span>
+	<div class="jumbotron">
+		<div class="container">
+      <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Category Id</th>
+        <th>Name</th>
+        <th>Image Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="category in categories" ng-if="!category.name">
+        <td>{{category.cat_id}}</td>
+        <td>{{category.cat_name}}</td>
+        <td>{{category.image_name}}</td>
+      </tr>
+    </tbody>
+  </table>
+		</div>
+	</div>
+</div>

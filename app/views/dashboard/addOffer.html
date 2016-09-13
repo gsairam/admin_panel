@@ -1,0 +1,39 @@
+<div>
+	<h2>Add Offers</h2>
+	<span class="glyphicon glyphicon-dashboard bg-fade"></span>
+	<div class="jumbotron">
+	   <div class="container">
+         <center>
+           <table class="table table-bordered">
+             <tbody>
+               <tr>
+				             <td><label>Offer Id : </label></td>
+                     <td><input type="number" name="id" ng-model="offer.offer_id"></td>
+              </tr>
+               <tr>
+				             <td><label>Offer Name : </label></td>
+                     <td><input type="text" name="offer_name" ng-model="offer.offer_name"></td>
+              </tr>
+              <tr>
+				            <td><label>Item Id : </label></td>
+                    <td><input type="number" name="item_id" ng-model="offer.item_id"></td>
+              </tr>
+              <tr>
+				            <td><label>Store Id : </label></td>
+                    <td><input type="number" name="store_id" ng-model="offer.store_id"></td>
+              </tr>
+              <tr>
+				            <td><label>Category Id : </label></td>
+                    <td><input type="number" name="category_id" ng-model="offer.cat_id"></td>
+              </tr>
+              <tr>
+				            <td><label>Image Id : </label></td>
+                    <td><input type="number" name="landline" ng-model="offer.img_id"></td>
+              </tr>
+            </tbody>
+          </table>
+          <button type="button" name="Submit" ng-click="addOffer()">Submit</button>
+        </center>
+    </div>
+	</div>
+</div>

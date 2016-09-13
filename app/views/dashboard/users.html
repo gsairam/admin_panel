@@ -1,0 +1,33 @@
+<div>
+	<h2>Users <small>Around the globle...!</small></h2>
+	<span class="glyphicon glyphicon-dashboard bg-fade"></span>
+	<div class="jumbotron">
+			<a class="pull-right btn btn-primary btn-outline btn-rounded" ng-click="showPrompt()">Add User</a><br><br>
+			<button class="pull right" confirmed-click="showdeletednumbers()"
+         ng-confirm-click="Would you like to delete?">Delete</button>
+      <table class="table table-bordered">
+      <tr>
+				<th>
+					select
+				</th>
+				<th>User Id</th>
+        <th>Full Name</th>
+        <th>Email</th>
+        <th>Phone No</th>
+        <th>Landline</th>
+        <th>Address</th>
+      </tr>
+      <tr ng-repeat="user in users" ng-if="user.fullname&&user.deleted_at==''">
+				<td>
+					<input type="checkbox" ng-model="string" ng-click="selected(user.id)">
+				</td>
+				<td>{{user.id}}</td>
+        <td>{{user.fullname}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.phoneno}}</td>
+        <td>{{user.landline}}</td>
+        <td>{{user.address}}</td>
+      </tr>
+  </table>
+		</div>
+</div>

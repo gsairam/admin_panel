@@ -1,0 +1,39 @@
+<div>
+	<h2>Add Item</h2>
+	<span class="glyphicon glyphicon-dashboard bg-fade"></span>
+	<div class="jumbotron">
+	   <div class="container">
+         <center>
+           <table class="table table-bordered">
+             <tbody>
+               <tr>
+				             <td><label>Item Id : </label></td>
+                     <td><input type="number" name="id" ng-model="item.item_id"></td>
+              </tr>
+              <tr>
+				            <td><label>Item Name : </label></td>
+                    <td><input type="text" name="address" ng-model="item.item_name"></td>
+              </tr>
+               <tr>
+				             <td><label>Category Id : </label></td>
+                     <td><input type="number" name="category" ng-model="item.cat_id"></td>
+              </tr>
+              <tr>
+				            <td><label>Cost : </label></td>
+                    <td><input type="number" name="cost" ng-model="item.cost"></td>
+              </tr>
+              <tr>
+				            <td><label>Rating : </label></td>
+                    <td><input type="number" name="rating" ng-model="item.rating"></td>
+              </tr>
+              <tr>
+				            <td><label>Image Id : </label></td>
+                    <td><input type="text" name="image" ng-model="item.img_id"></td>
+              </tr>
+            </tbody>
+          </table>
+          <button type="button" name="Submit" ng-click="addItem()">Submit</button>
+        </center>
+    </div>
+	</div>
+</div>

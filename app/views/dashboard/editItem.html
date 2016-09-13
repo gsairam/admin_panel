@@ -1,0 +1,46 @@
+<div>
+	<h2>Edit Item</h2>
+	<span class="glyphicon glyphicon-dashboard bg-fade"></span>
+	<div class="jumbotron">
+	   <div class="container">
+         <center>
+           <table class="table table-bordered">
+             <tbody>
+               <div ng-repeat="edit_item in edit_items">
+                <tr>
+                  <td>
+                  {{edit_item.item_name}}
+                  </td>
+                </tr>
+               <tr>
+				             <td><label>Item Id : </label></td>
+                     <td><input type="number" name="id" ></td>
+              </tr>
+              <tr>
+				            <td><label>Item Name : </label></td>
+                    <td><input type="text" name="address" ng-model="edit_item.item_name" value={{edit_item.item_name}}></td>
+              </tr>
+               <tr>
+				             <td><label>Category Id : </label></td>
+                     <td><input type="number" name="category" ng-model="edit_item.cat_id"></td>
+              </tr>
+              <tr>
+				            <td><label>Cost : </label></td>
+                    <td><input type="number" name="cost"  ng-model="edit_item.cost" ></td>
+              </tr>
+              <tr>
+				            <td><label>Rating : </label></td>
+                    <td><input type="number" name="rating" ng-model="edit_item.rating"></td>
+              </tr>
+              <tr>
+				            <td><label>Image Id : </label></td>
+                    <td><input type="text" name="image" ng-model="edit_item.img_id"></td>
+              </tr>
+               </div>
+            </tbody>
+          </table>
+          <button type="button" name="Submit" ng-click="addItem()">Submit</button>
+        </center>
+    </div>
+	</div>
+</div>

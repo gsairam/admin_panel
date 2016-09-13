@@ -1,0 +1,29 @@
+<div>
+	<h2>Offers <small>get them before others...!</small></h2>
+	<span class="glyphicon glyphicon-dashboard bg-fade"></span>
+	<div class="jumbotron">
+		<div class="container">
+			<a class="pull-right btn btn-primary btn-outline btn-rounded" ng-click="add_offer()">Add Offer</a><br><br>
+      <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Offer Id</th>
+        <th>Offer Name</th>
+        <th>Item Id</th>
+        <th>Store Id</th>
+        <th>Category Id</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="offer in offers" ng-if="offer.offer_name">
+        <td>{{offer.offer_id}}</td>
+        <td>{{offer.offer_name}}</td>
+        <td>{{offer.item_id}}</td>
+        <td>{{offer.store_id}}</td>
+        <td>{{offer.cat_id}}</td>
+      </tr>
+    </tbody>
+  </table>
+		</div>
+	</div>
+</div>
